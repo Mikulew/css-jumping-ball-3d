@@ -1,5 +1,8 @@
 :root {
-    --cubeColor: #0ff7;
+    --ballColor: #a3a3a3;
+    --cubeColor: #ffcc99;
+    --floorColor1: #000000;
+    --floorColor2: #abb926;
     --rotateSpeed: 30s;
     --bounceSpeed: 2s;
 }
@@ -29,7 +32,7 @@ body {
     width: 1em; 
     height: 1em;
     border-radius: 50%;
-    background: lightblue;
+    background: var(--ballColor);
     background-image: radial-gradient(circle at top, lightblue, #000);
     animation: ballBounce var(--bounceSpeed) infinite ease-out, sceneRotate var(--rotateSpeed) infinite linear reverse;
 }
@@ -100,7 +103,7 @@ body {
     transform: translate(-50%, -50%) rotateX(90deg);
     width: 15em;
     height: 15em;
-    background-image: radial-gradient(transparent 0 , #000 100%), repeating-conic-gradient(from 45deg, #111 0deg 90deg, #222 90deg 180deg);
+    background-image: radial-gradient(transparent 0 , #000 100%), repeating-conic-gradient(from 45deg, var(--floorColor1) 0deg 90deg, var(--floorColor2) 90deg 180deg);
     background-size: 100%, 1em 1em;
 }
 
