@@ -1,0 +1,36 @@
+:root {
+    --boxColor: #0ff7;
+}
+
+body {
+    background-color: #000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    font-size: 75px;
+}
+
+.scene {
+    position: relative;
+}
+
+.ball {
+    width: 1em;
+    height: 1em;
+    background: lightblue;
+    border-radius: 50%;
+}
+
+.cube {
+    width: 2em;
+    height: 2em;
+    background: var(--boxColor);
+}
+
+.floor {
+    background: grey;
+    width: 5em;
+    height: 5em
+}
